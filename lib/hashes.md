@@ -18,8 +18,8 @@ peoples names and their ages like: {"Kyle" => 28, "Travis" => 26, "Andrea" => 24
 
 Hashes and Arrays are similar becuase they both hold collections of information which can be iterated over. 
 In ruby, both hashes and arrays can hold a combination of different data types. They differ in the way you 
-access information within them. In an array we would use the elements position within the array to call its 
-index. In a hash, any given elements posiiton with the hash is arbitrary since we retrieve a value by providing 
+access information within them. In an array we would use the element's position within the array to call its 
+index. In a hash, any given element's posiiton within the hash is arbitrary since we retrieve a value by providing 
 the appropriate key. Each array element has a value while hashs have key-value pairs.
 
 # How do you retrieve a particular value from a Hash?
@@ -37,7 +37,7 @@ already in the hash then its value would be changed to 58.
 
 # How would you perform an operation on every element inside a Hash?
 
-We would perform an operation on eahc element iside of a hash by using the each method. The each mehtod 
+We would perform an operation on each element iside of a hash by using the each method. The each mehtod 
 iterates through each element in the hash and executes some block of code. the syntax for this is:
 my_hash.each{ |k, v| some code to do with each element }. Unlike an array you difing two variables for the 
 code block: the key and the value (I used k and v above).
