@@ -20,7 +20,22 @@ Hashes and Arrays are similar becuase they both hold collections of information 
 In ruby, both hashes and arrays can hold a combination of different data types. They differ in the way you 
 access information within them. In an array we would use the element's position within the array to call its 
 index. In a hash, any given element's posiiton within the hash is arbitrary since we retrieve a value by providing 
-the appropriate key. Each array element has a value while hashs have key-value pairs.
+the appropriate key. Each array element has a value while hashs have key-value pairs. 
+
+You would use an Array when you are working with an ordered list of objects. An example of this would be a grocery list. 
+The items on the grocery list describe the grocery list. A hash would not be ideal for this as each item on the grocery 
+does not have another object (key) that it relates to.  
+
+If I had to store information about a person, "Jeff", I would use a hash.  Jeff has several atributes such as height, 
+weight, eye_color, favorite_color, etc. A hash would be used instead of an array becuase the values for these atributes 
+relate to the attribute and the person.  If I used an array of the values they would lose their meaning, and in the case of 
+Jeff, his eyes are blue and his favorite color is blue meaning an array would have two elements with the value "blue". 
+A hash gives meaning to the values and allows us to quickly access the information.  
+
+Another example of when to use a hash instead of an array: Say I want to store information about my neighbors and what their 
+dogs name is. I could keep the dogs names in an array but this doesn't help as I wouldn't know which neighbor owns that dog. 
+I want to know that Chuck next door owns a dog named "Floyd" and Alice accross the street owns a dog named "Ranger". 
+{"Chuck" => "Floyd", "Alice" => "Ranger"} In this case the value (dog name) relates to the keys (owners name). 
 
 # How do you retrieve a particular value from a Hash?
 
